@@ -1,0 +1,19 @@
+# Changes here will be overwritten by Copier
+_commit: v1.0.0
+_src_path: python-opensource-template
+authors:
+- Michał Bryś <michal.brys@getindata.com>
+- Mariusz Strzelecki <mariusz.strzelecki@getindata.com>
+description: Starters for kedro projects to simplify pipelines deployment using GetInData
+    plugins
+docs_url: https://getindata-kedro-starters.readthedocs.io/
+full_name: Kedro starters by GetInData
+github_url: https://github.com/getindata/kedro-starters
+initial_version: 0.0.1
+keywords:
+- kedro
+- kedro starters
+- mlops
+maintainers: []
+module_name: getindata_kedro_starters
+short_name: getindata-kedro-starters
