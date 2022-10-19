@@ -4,6 +4,10 @@ In [GetInData](https://getindata.com/) we deploy Kedro-based projects to differe
 (on-premise and cloud). This repository hosts the starters with a few deployment recipes, including
 the ones that use [our plugins](https://github.com/search?q=topic%3Akedro-plugin+org%3Agetindata+fork%3Atrue&type=repositories).
 
+## Available starters
+
+* [pyspark-iris-running-on-gke](getindata_kedro_starters/pyspark-iris-running-on-gke/README.md) uses Google Kubernetes Engine to run Spark-powered kedro pipeline in a distributed manner.
+
 ## Starters development
 
 1. Clone the repository and switch to `develop`.

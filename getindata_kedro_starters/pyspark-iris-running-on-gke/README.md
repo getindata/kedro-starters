@@ -8,24 +8,9 @@ Code in this repository demonstrates best practices when it comes to run Spark d
 
 ## Getting started
 
-Zero, install the starter
-
-```bash
-kedro new --starter=pyspark-iris
-```
-
-First, setup the infra,
-
-then, build and push docker image,
-
-finally, run a job.
-
-
-
-The starter template can be used to start a new project using the [`starter` option](https://kedro.readthedocs.io/en/stable/get_started/starters.html) in `kedro new`:
-
-
-As a reference, the [How to use Kedro on a Databricks cluster](https://github.com/kedro-org/kedro/blob/develop/docs/source/deployment/databricks.md) tutorial bootstraps the project using this starter.
+1. Install latest starters version from pypi: `pip install -U getindata-kedro-starters`
+2. Run `kedro new --starter=pyspark-iris-running-on-gke`
+3. Enter the project directory and follow the README.md file for GKE setup and running the code
 
 ## Features
 
