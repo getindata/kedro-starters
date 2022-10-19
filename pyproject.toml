@@ -15,7 +15,7 @@ classifiers = [
 ]
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core>=1.0.8"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.coverage.run]
@@ -40,3 +40,5 @@ pytest-cov = ">=2.8.0, <4.0.0"
 tox = ">=3.25.1"
 pre-commit = "2.20.0"
 
+[tool.poetry.plugins."kedro.starters"]
+"starter" = "getindata_kedro_starters.starters:starters"
