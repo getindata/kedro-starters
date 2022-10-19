@@ -31,7 +31,7 @@ This starter requires a bit of infrastructure in Google Cloud beaforehard. In or
         kubectl edit configmap -n kube-system kube-dns-autoscaler
         # modify `preventSinglePointFailure` value to `false`
 
-    Kudos to [Ben Mizrahi](https://medium.com/plarium-engineering/gke-cluster-scale-zero-tips-49f1d80bee90) or finding these solutions!
+    Kudos to [Ben Mizrahi](https://medium.com/plarium-engineering/gke-cluster-scale-zero-tips-49f1d80bee90) for the discovery of these solutions!
 
 ## Running the pipeline
 
