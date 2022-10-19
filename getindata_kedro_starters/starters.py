@@ -9,5 +9,6 @@ starters = [
         template_path=str(base_dir),
         directory=starter.name,
     )
-    for starter in base_dir.glob('*') if starter.is_dir() and starter.name != '__pycache__'
+    for starter in base_dir.glob("*")
+    if starter.is_dir() and starter.name != "__pycache__"
 ]
