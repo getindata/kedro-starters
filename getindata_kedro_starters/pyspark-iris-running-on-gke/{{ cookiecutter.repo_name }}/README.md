@@ -22,19 +22,30 @@ This starter requires a bit of infrastructure in Google Cloud beaforehard. In or
         kubectl create serviceaccount spark
         kubectl create clusterrolebinding spark-role --clusterrole=edit --serviceaccount=default:spark --namespace=default
 
-5. Build the docker image:
+5. (optionally) In order to minimize the GKE resources usage, create PDB for L7 backend (so it can freely move between nodes):
+
+        kubectl create poddisruptionbudget l7-default-backend-pdb --namespace=kube-system --selector name=glbc --max-unavailable 1
+
+    and edit the `kube-dns-autoscaler` configmap so it accepts a single pod:
+
+        kubectl edit configmap -n kube-system kube-dns-autoscaler
+        # modify `preventSinglePointFailure` value to `false`
+
+## Running the pipeline
+
+1. Build the docker image:
 
         docker build -t gcr.io/{{ cookiecutter.gcloud_project }}/kedro-{{ cookiecutter.repo_name }}:latest .
 
-6. Push the docker image
+2. Push the docker image
 
         docker push gcr.io/{{ cookiecutter.gcloud_project }}/kedro-{{ cookiecutter.repo_name }}:latest
 
-7. Run the job:
+3. Run the job:
 
         kubectl apply -f job.yaml
 
-8. Destroy the infrastructure if you do not longer need it:
+4. Destroy the infrastructure if you do not longer need it:
 
         terraform destroy
 
