@@ -13,7 +13,7 @@ This starter requires a bit of infrastructure in Google Cloud beaforehard. In or
 
         terraform apply
 
-3. When the cluster is creted, configure kubecrl configuration:
+3. When the cluster is created, configure kubectl configuration:
 
         gcloud container clusters get-credentials kedro-running-spark-on-k8s --zone {{ cookiecutter.gcloud_zone }} --project {{ cookiecutter.gcloud_project }}
 

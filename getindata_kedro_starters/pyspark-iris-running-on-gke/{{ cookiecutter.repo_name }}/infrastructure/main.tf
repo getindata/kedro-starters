@@ -50,7 +50,7 @@ module "gke" {
   ip_range_services      = module.network.subnets_secondary_ranges[0][1].range_name
   create_service_account = true
   grant_registry_access  = true
-  initial_node_count = 1
+  initial_node_count     = 1
 
   cluster_autoscaling = {
     autoscaling_profile = "OPTIMIZE_UTILIZATION"
@@ -72,7 +72,7 @@ module "gke" {
       max_count    = 10
       disk_size_gb = 30
       disk_type    = "pd-standard"
-      preemptible  = true
+      spot         = true
     },
   ]
 }
