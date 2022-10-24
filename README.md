@@ -11,8 +11,7 @@ the ones that use [our plugins](https://github.com/search?q=topic%3Akedro-plugin
 ## Starters development
 
 1. Clone the repository and switch to `develop`.
-2. Run `poetry install`
-3. Check the venv location: `poetry env info`
-4. Run `source VENV_PATH/bin/activate`
-5. Install kedro `pip install kedro==0.18.3`
-6. Run `kedro new -s <name-of-the-starter>`
+1. Run `poetry install`
+1. Run `source $(poetry env info --path)/bin/activate`
+1. Install kedro `pip install kedro==0.18.3`
+1. Run `kedro new -s <name-of-the-starter>`
