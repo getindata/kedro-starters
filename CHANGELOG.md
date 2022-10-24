@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## [Unreleased]
 
 -   `pyspark-iris-running-on-gke` starter
 
