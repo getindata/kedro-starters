@@ -52,10 +52,6 @@ module "gke" {
   grant_registry_access  = true
   initial_node_count     = 1
 
-  cluster_autoscaling = {
-    autoscaling_profile = "OPTIMIZE_UTILIZATION"
-  }
-
   node_pools = [
     {
       name         = "spark-drivers"

@@ -10,7 +10,7 @@ the ones that use [our plugins](https://github.com/search?q=topic%3Akedro-plugin
 
 ## Starters development
 
-1. Clone the repository and switch to `develop`.
+1. Clone the repository and switch to `develop`
 1. Run `poetry install`
 1. Run `source $(poetry env info --path)/bin/activate`
 Note: when you use `conda`, you need the extra step of `conda decativate` to avoid conflict between the `conda` and `venv`
