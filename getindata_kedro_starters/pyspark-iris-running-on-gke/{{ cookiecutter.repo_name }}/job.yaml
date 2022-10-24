@@ -1,0 +1,21 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: kedro-spark-on-k8s
+spec:
+  backoffLimit: 0
+  ttlSecondsAfterFinished: 300
+  template:
+    spec:
+      serviceAccountName: spark
+      containers:
+      - name: kedro
+        image: &image gcr.io/{{ cookiecutter.gcloud_project }}/kedro-{{ cookiecutter.repo_name }}:latest
+        imagePullPolicy: Always
+        command: ["kedro", "run", "-e", "spark-on-k8s"]
+        env:
+        - name: CONTAINER_IMAGE
+          value: *image
+      restartPolicy: Never
+      nodeSelector:
+        node_pool: spark-drivers
