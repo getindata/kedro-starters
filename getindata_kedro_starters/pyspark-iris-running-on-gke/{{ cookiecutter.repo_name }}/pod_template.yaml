@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Pod
+spec:
+  tolerations:
+  - key: spark
+    operator: Equal
+    value: executors
