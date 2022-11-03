@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+-   Kubernetes tolerations used in `pyspark-iris-running-on-gke` to make it even more cost-effeective
+
 ## [0.1.0] - 2022-10-24
 
 -   `pyspark-iris-running-on-gke` starter

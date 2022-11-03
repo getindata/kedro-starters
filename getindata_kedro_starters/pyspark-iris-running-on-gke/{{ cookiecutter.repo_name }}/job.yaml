@@ -17,5 +17,7 @@ spec:
         - name: CONTAINER_IMAGE
           value: *image
       restartPolicy: Never
-      nodeSelector:
-        node_pool: spark-drivers
+      tolerations:
+      - key: spark
+        operator: Equal
+        value: drivers
