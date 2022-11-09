@@ -1,0 +1,9 @@
+{
+    "project_name": "Iris",
+    "repo_name": "{{ cookiecutter.project_name.strip().replace(' ', '-').replace('_', '-').lower() }}",
+    "python_package": "{{ cookiecutter.project_name.strip().replace(' ', '_').replace('-', '_').lower() }}",
+    "kedro_version": "{{ cookiecutter.kedro_version }}",
+    "spark_version": "3.3.0",
+    "gcloud_project": "",
+    "gcloud_region": "europe-central2"
+}

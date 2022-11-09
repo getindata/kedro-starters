@@ -1,0 +1,9 @@
+example_iris_data:
+  type: spark.SparkDataSet
+  filepath: file:///home/kedro/data/01_raw/iris.csv
+  file_format: csv
+  load_args:
+    header: True
+    inferSchema: True
+  save_args:
+    header: True
