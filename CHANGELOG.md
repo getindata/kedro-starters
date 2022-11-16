@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [0.1.2] - 2022-11-16
+
 -   Fixed release process of pypi package
 
 ## [0.1.1] - 2022-11-09
@@ -16,7 +18,9 @@
 
 -   Project seed prepared
 
-[Unreleased]: https://github.com/getindata/kedro-starters/compare/0.1.1...HEAD
+[Unreleased]: https://github.com/getindata/kedro-starters/compare/0.1.2...HEAD
+
+[0.1.2]: https://github.com/getindata/kedro-starters/compare/0.1.1...0.1.2
 
 [0.1.1]: https://github.com/getindata/kedro-starters/compare/0.1.0...0.1.1
 

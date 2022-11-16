@@ -9,7 +9,7 @@ description: Starters for kedro projects to simplify pipelines deployment using 
 docs_url: https://getindata-kedro-starters.readthedocs.io/
 full_name: Kedro starters by GetInData
 github_url: https://github.com/getindata/kedro-starters
-initial_version: 0.1.1
+initial_version: 0.1.2
 keywords:
 - kedro
 - kedro starters
