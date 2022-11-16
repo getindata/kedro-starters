@@ -12,10 +12,11 @@ This starter requires a bit of infrastructure in Google Cloud beaforehard. In or
 2. If the plan looks OK, apply it:
 
         terraform apply
+        cd ..
 
-3. When the cluster is created, configure kubectl configuration:
+3. When the cluster is created, kubectl configuration is downloaded, so it's time to activate it:
 
-        gcloud container clusters get-credentials kedro-running-spark-on-k8s --zone {{ cookiecutter.gcloud_zone }} --project {{ cookiecutter.gcloud_project }}
+        export KUBECONFIG=./infrastructure/.kubeconfig
 
 4. Finally, create a service account for spark with edit role (spark driver needs rights to spawn new pods within the namespace):
 

@@ -1,6 +1,6 @@
 spark.app.name: spark-on-k8s-demo
 spark.master: k8s://https://kubernetes.default.svc
-spark.kubernetes.node.selector.cloud.google.com/gke-nodepool: spark-executors
+spark.kubernetes.executor.podTemplateFile: /home/kedro/pod_template.yaml
 spark.kubernetes.authenticate.driver.serviceAccountName: spark
 spark.kubernetes.container.image.pullPolicy: Always
 spark.kubernetes.namespace: default
