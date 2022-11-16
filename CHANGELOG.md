@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+-   Fixed release process of pypi package
+
 ## [0.1.1] - 2022-11-09
 
 -   Kubernetes tolerations used in `pyspark-iris-running-on-gke` to make it even more cost-effeective
