@@ -1,0 +1,22 @@
+project_name:
+  title: "Project Name"
+  text: |
+    Please enter a human readable name for your new project.
+    Spaces, hyphens, and underscores are allowed.
+  regex_validator: "^[\\w -]{2,}$"
+  error_message: |
+    It must contain only alphanumeric symbols, spaces, underscores and hyphens and
+    be at least 2 characters long.
+
+spark_version:
+  title: "Spark version"
+  text: Please enter spark version to be used in format X.Y.Z.
+  regex_validator: "^\\d+\\.\\d+\\.\\d+$"
+
+gcloud_project:
+  title: "Google Cloud project id"
+  text: "Use `gcloud projects list` and select one"
+  regex_validator: "^[a-z0-9-]+$"
+
+gcloud_region:
+  title: "Google Cloud region to run the processing in"
