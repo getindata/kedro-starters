@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "getindata-kedro-starters"
-version = "0.1.2"
+version = "0.2.0"
 description = "Starters for kedro projects to simplify pipelines deployment using GetInData plugins"
 readme = "README.md"
 authors = ['Michał Bryś <michal.brys@getindata.com>', 'Mariusz Strzelecki <mariusz.strzelecki@getindata.com>']
